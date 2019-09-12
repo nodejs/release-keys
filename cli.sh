@@ -7,13 +7,28 @@ set -euo pipefail
 # ------------------------------------------------------------------- #
 
 NODEJS_KEYS_REPO="canterberry/nodejs-keys"
+CLI_DIR="$(cd "$(dirname "$0")"; pwd)"
 
 # =================================================================== #
 # Functions
 # ------------------------------------------------------------------- #
 
+nodejs_keys_fetch() {
+  local KEY_ID="$1"
+
+  if [ -f "${CLI_DIR}/keys/${KEY_ID}.asc" ]; then
+    cat "${CLI_DIR}/keys/${KEY_ID}.asc"
+  else
+    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys/${KEY_ID}.asc"
+  fi
+}
+
 nodejs_keys_list() {
-  curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys.list"
+  if [ -f "${CLI_DIR}/keys.list" ]; then
+    cat "${CLI_DIR}/keys.list"
+  else
+    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys.list"
+  fi
 }
 
 nodejs_keys_clear() {
@@ -26,7 +41,7 @@ nodejs_keys_clear() {
 
 nodejs_keys_import() {
   for KEY_ID in $(nodejs_keys_list | xargs); do
-    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys/${KEY_ID}.asc" | gpg --import
+    nodejs_keys_fetch "${KEY_ID}" | gpg --import
   done
 }
 
