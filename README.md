@@ -1,27 +1,25 @@
 # Node.js Release Keys
 
-GPG keys used to sign Node.js releases:
+Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 
 * **Beth Griggs** &lt;bethany.griggs@uk.ibm.com&gt;
 [`4ED778F539E3634C779C87C6D7062848A1AB005C`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
 [`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
-* **Evan Lucas** &lt;evanlucas@me.com&gt;
-[`B9AE9905FFD7803F25714661B63B535A4C206CA9`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/B9AE9905FFD7803F25714661B63B535A4C206CA9.asc)
-* **Gibson Fahnestock** &lt;gibfahn@gmail.com&gt;
-[`77984A986EBC2AA786BC0F66B01FBB92821C587A`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/77984A986EBC2AA786BC0F66B01FBB92821C587A.asc)
 * **James M Snell** &lt;jasnell@keybase.io&gt;
 [`71DCFD284A79C3B38668286BC97EC7A07EDE3FC1`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/71DCFD284A79C3B38668286BC97EC7A07EDE3FC1.asc)
-* **Jeremiah Senkpiel** &lt;fishrock@keybase.io&gt;
-[`FD3A5288F042B6850C66B31F09FE44734EB7990E`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/FD3A5288F042B6850C66B31F09FE44734EB7990E.asc)
 * **Michaël Zasso** &lt;targos@protonmail.com&gt;
 [`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
 * **Myles Borins** &lt;myles.borins@gmail.com&gt;
 [`C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8.asc)
+* **Richard Lau** &lt;riclau@uk.ibm.com&gt;
+[`C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C.asc)
 * **Rod Vagg** &lt;rod@vagg.org&gt;
 [`DD8F2338BAE7501E3DD5AC78C273792F7D83545D`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/DD8F2338BAE7501E3DD5AC78C273792F7D83545D.asc)
 * **Ruben Bridgewater** &lt;ruben@bridgewater.de&gt;
 [`A48C2BEE680E841632CD4E44F07496B3EB3C1762`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/A48C2BEE680E841632CD4E44F07496B3EB3C1762.asc)
+* **Ruy Adorno** &lt;ruyadorno@hotmail.com&gt;
+[`108F52B48DB57BB0CC439B2997B01419BD92F80A`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/108F52B48DB57BB0CC439B2997B01419BD92F80A.asc)
 * **Shelley Vohr** &lt;shelley.vohr@gmail.com&gt;
 [`B9E2F5981AA6E0CD28160D9FF13993A75599653C`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/B9E2F5981AA6E0CD28160D9FF13993A75599653C.asc)
 
@@ -29,10 +27,16 @@ Other keys used to sign some previous releases:
 
 * **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt;
 [`9554F04D7259F04124DE6B476D5A82AC7E37093B`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/9554F04D7259F04124DE6B476D5A82AC7E37093B.asc)
+* **Evan Lucas** &lt;evanlucas@me.com&gt;
+[`B9AE9905FFD7803F25714661B63B535A4C206CA9`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/B9AE9905FFD7803F25714661B63B535A4C206CA9.asc)
+* **Gibson Fahnestock** &lt;gibfahn@gmail.com&gt;
+[`77984A986EBC2AA786BC0F66B01FBB92821C587A`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/77984A986EBC2AA786BC0F66B01FBB92821C587A.asc)
 * **Isaac Z. Schlueter** &lt;i@izs.me&gt;
 [`93C7E9E91B49E432C2F75674B0A78B0A6C481CF6`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/93C7E9E91B49E432C2F75674B0A78B0A6C481CF6.asc)
 * **Italo A. Casas** &lt;me@italoacasas.com&gt;
 [`56730D5401028683275BD23C23EFEFE93C4CFFFE`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/56730D5401028683275BD23C23EFEFE93C4CFFFE.asc)
+* **Jeremiah Senkpiel** &lt;fishrock@keybase.io&gt;
+[`FD3A5288F042B6850C66B31F09FE44734EB7990E`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/FD3A5288F042B6850C66B31F09FE44734EB7990E.asc)
 * **Julien Gilli** &lt;jgilli@fastmail.fm&gt;
 [`114F43EE0176B71C7BC219DD50A3051F888C628D`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/114F43EE0176B71C7BC219DD50A3051F888C628D.asc)
 * **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt;
