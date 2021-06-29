@@ -2,7 +2,7 @@
 
 Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 
-* **Beth Griggs** &lt;bethany.griggs@uk.ibm.com&gt;
+* **Beth Griggs** &lt;bgriggs@redhat.com&gt;
 [`4ED778F539E3634C779C87C6D7062848A1AB005C`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
 [`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
@@ -14,7 +14,7 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 [`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
 * **Myles Borins** &lt;myles.borins@gmail.com&gt;
 [`C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8.asc)
-* **Richard Lau** &lt;riclau@uk.ibm.com&gt;
+* **Richard Lau** &lt;rlau@redhat.com&gt;
 [`C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C.asc)
 * **Rod Vagg** &lt;rod@vagg.org&gt;
 [`DD8F2338BAE7501E3DD5AC78C273792F7D83545D`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/DD8F2338BAE7501E3DD5AC78C273792F7D83545D.asc)
@@ -46,6 +46,7 @@ Other keys used to sign some previous releases:
 * **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt;
 [`7937DFD2AB06298B2293C3187D33FF9D0246406D`](https://raw.githubusercontent.com/nodejs/release-keys/master/keys/7937DFD2AB06298B2293C3187D33FF9D0246406D.asc)
 
+
 ## Verifying Release Packages
 
 This repo contains the raw release signing keys in two forms:
@@ -71,7 +72,7 @@ For example, if you cloned the repo to **/path/to/nodejs-keys**, then the `gpg` 
 to verify a release package will look something like this:
 
 ```bash
-GNUPGHOME=/path/to/nodejs-keys/gpg gpg --verify SHASUMS256.txt.sig SHASUMS256.txt
+GNUPGHOME=/path/to/release-keys/gpg gpg --verify SHASUMS256.txt.sig SHASUMS256.txt
 ```
 
 ### Using your own GPG keyring
@@ -87,5 +88,5 @@ the **cli.sh** script in this repo. For example, immediately after cloning the r
 the following command will import all release signing keys:
 
 ```bash
-nodejs-keys/cli.sh import
+release-keys/cli.sh import
 ```
