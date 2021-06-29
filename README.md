@@ -27,6 +27,8 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 
 Other keys used to sign some previous releases:
 
+* **Danielle Adams** &lt;adamzdanielle@gmail.com&gt;
+[`1C050899334244A8AF75E53792EF661D867B9DFA`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/1C050899334244A8AF75E53792EF661D867B9DFA.asc)
 * **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt;
 [`9554F04D7259F04124DE6B476D5A82AC7E37093B`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/9554F04D7259F04124DE6B476D5A82AC7E37093B.asc)
 * **Evan Lucas** &lt;evanlucas@me.com&gt;
