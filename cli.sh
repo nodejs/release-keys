@@ -6,7 +6,7 @@ set -euo pipefail
 # Configuration
 # ------------------------------------------------------------------- #
 
-NODEJS_KEYS_REPO="canterberry/nodejs-keys"
+NODEJS_KEYS_REPO="nodejs/release-keys"
 CLI_DIR="$(cd "$(dirname "$0")"; pwd)"
 
 # =================================================================== #
