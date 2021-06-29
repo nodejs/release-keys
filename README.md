@@ -6,6 +6,8 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 [`4ED778F539E3634C779C87C6D7062848A1AB005C`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
 [`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
+* **Danielle Adams** &lt;adamzdanielle@gmail.com&gt;
+[`74F12602B6F1C4E913FAA37AD3A89613643B6201`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/74F12602B6F1C4E913FAA37AD3A89613643B6201.asc)
 * **James M Snell** &lt;jasnell@keybase.io&gt;
 [`71DCFD284A79C3B38668286BC97EC7A07EDE3FC1`](https://raw.githubusercontent.com/canterberry/nodejs-keys/master/keys/71DCFD284A79C3B38668286BC97EC7A07EDE3FC1.asc)
 * **Michaël Zasso** &lt;targos@protonmail.com&gt;
