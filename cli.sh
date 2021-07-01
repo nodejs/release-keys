@@ -45,9 +45,28 @@ nodejs_keys_import() {
   done
 }
 
+nodejs_keys_add() {
+  if [ $# -lt 1 ]; then
+    nodejs_keys_usage
+  fi
+
+  KEY_ID="$1"
+
+  gpg --export --armor "${KEY_ID}" > "${CLI_DIR}/keys/${KEY_ID}.asc"
+
+  GNUPGHOME="${CLI_DIR}/gpg" gpg --import "${CLI_DIR}/keys/${KEY_ID}.asc"
+
+  printf "keys.list <- "
+  if grep --quiet "${KEY_ID}" "${CLI_DIR}/keys.list"; then
+    echo "${KEY_ID}"
+  else
+    echo "${KEY_ID}" | tee -a "${CLI_DIR}/keys.list"
+  fi
+}
+
 nodejs_keys_usage() {
   >&2 cat <<EOF
-USAGE: $0 clear|help|import
+USAGE: $0 clear|help|import|add
 
 Manages Node.js release signing keys.
 
@@ -56,6 +75,7 @@ COMMANDS:
   clear   Clears all Node.js release signing keys from the GPG keyring.
   help    Displays this help message.
   import  Imports all Node.js release signing keys to the GPG keyring. (default)
+  add     Adds a release signing key to this repo.
 
 EOF
   exit 1
@@ -83,6 +103,7 @@ COMMAND_NAME="help"
 
 if [ "$#" -gt 0 ]; then
   COMMAND_NAME="$1"
+  shift
 fi
 
 case "${COMMAND_NAME}" in
@@ -91,6 +112,9 @@ case "${COMMAND_NAME}" in
     ;;
   import)
      nodejs_keys_import
+    ;;
+  add)
+    nodejs_keys_add "$@"
     ;;
   *)
     nodejs_keys_usage
