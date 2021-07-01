@@ -52,7 +52,7 @@ nodejs_keys_add() {
 
   KEY_ID="$1"
 
-  gpg --export --armor "${KEY_ID}" > "keys/${KEY_ID}.asc"
+  gpg --export --armor "${KEY_ID}" > "${CLI_DIR}/keys/${KEY_ID}.asc"
 
   GNUPGHOME="${CLI_DIR}/gpg" gpg --import "${CLI_DIR}/keys/${KEY_ID}.asc"
 
@@ -63,7 +63,7 @@ nodejs_keys_add() {
 
 nodejs_keys_usage() {
   >&2 cat <<EOF
-USAGE: $0 clear|help|import
+USAGE: $0 clear|help|import|add
 
 Manages Node.js release signing keys.
 
