@@ -56,7 +56,10 @@ nodejs_keys_add() {
 
   GNUPGHOME="${CLI_DIR}/gpg" gpg --import "${CLI_DIR}/keys/${KEY_ID}.asc"
 
+  printf "keys.list <- "
   if grep --quiet "${KEY_ID}" "${CLI_DIR}/keys.list"; then
+    echo "${KEY_ID}"
+  else
     echo "${KEY_ID}" | tee -a "${CLI_DIR}/keys.list"
   fi
 }
