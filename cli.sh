@@ -19,7 +19,7 @@ nodejs_keys_fetch() {
   if [ -f "${CLI_DIR}/keys/${KEY_ID}.asc" ]; then
     cat "${CLI_DIR}/keys/${KEY_ID}.asc"
   else
-    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys/${KEY_ID}.asc"
+    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/HEAD/keys/${KEY_ID}.asc"
   fi
 }
 
@@ -27,7 +27,7 @@ nodejs_keys_list() {
   if [ -f "${CLI_DIR}/keys.list" ]; then
     cat "${CLI_DIR}/keys.list"
   else
-    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/master/keys.list"
+    curl -sSL "https://raw.githubusercontent.com/${NODEJS_KEYS_REPO}/HEAD/keys.list"
   fi
 }
 
