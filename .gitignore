@@ -1,2 +1,5 @@
 # Backup files, redundant with git history
 /gpg/*~
+
+# TOFU trust database (unused; see https://www.gnupg.org/documentation/manuals/gnupg/GPG-Configuration-Options.html)
+/gpg/tofu.db
