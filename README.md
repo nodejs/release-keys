@@ -4,6 +4,8 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 
 * **Beth Griggs** &lt;bgriggs@redhat.com&gt;
 [`4ED778F539E3634C779C87C6D7062848A1AB005C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
+* **Bryan English** &lt;bryan@bryanenglish.com&gt;
+[`141F07595B7B3FFE74309A937405533BE57C7D57`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/141F07595B7B3FFE74309A937405533BE57C7D57.asc)
 * **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
 [`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
 * **Danielle Adams** &lt;adamzdanielle@gmail.com&gt;
