@@ -18,6 +18,8 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 [`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
 * **Myles Borins** &lt;myles.borins@gmail.com&gt;
 [`C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8.asc)
+* **Rafael Gonzaga** &lt;rafael.nunu@hotmail.com&gt;
+[`890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4.asc)
 * **Richard Lau** &lt;rlau@redhat.com&gt;
 [`C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C.asc)
 * **Rod Vagg** &lt;rod@vagg.org&gt;
