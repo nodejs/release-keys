@@ -12,8 +12,6 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 [`74F12602B6F1C4E913FAA37AD3A89613643B6201`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/74F12602B6F1C4E913FAA37AD3A89613643B6201.asc)
 * **James M Snell** &lt;jasnell@keybase.io&gt;
 [`71DCFD284A79C3B38668286BC97EC7A07EDE3FC1`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/71DCFD284A79C3B38668286BC97EC7A07EDE3FC1.asc)
-* **Juan José Arboleda** &lt;soyjuanarbol@gmail.com&gt;
-[`61FC681DFB92A079F1685E77973F295594EC4689`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/61FC681DFB92A079F1685E77973F295594EC4689.asc)
 * **Michaël Zasso** &lt;targos@protonmail.com&gt;
 [`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
 * **Myles Borins** &lt;myles.borins@gmail.com&gt;
@@ -49,6 +47,8 @@ Other keys used to sign some previous releases:
 [`114F43EE0176B71C7BC219DD50A3051F888C628D`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/114F43EE0176B71C7BC219DD50A3051F888C628D.asc)
 * **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt;
 [`7937DFD2AB06298B2293C3187D33FF9D0246406D`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/7937DFD2AB06298B2293C3187D33FF9D0246406D.asc)
+* **Juan José Arboleda** &lt;soyjuanarbol@gmail.com&gt;
+[`61FC681DFB92A079F1685E77973F295594EC4689`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/61FC681DFB92A079F1685E77973F295594EC4689.asc)
 
 
 ## Verifying Release Packages
