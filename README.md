@@ -28,6 +28,8 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 [`108F52B48DB57BB0CC439B2997B01419BD92F80A`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/108F52B48DB57BB0CC439B2997B01419BD92F80A.asc)
 * **Shelley Vohr** &lt;shelley.vohr@gmail.com&gt;
 [`B9E2F5981AA6E0CD28160D9FF13993A75599653C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/B9E2F5981AA6E0CD28160D9FF13993A75599653C.asc)
+* **Ulises Gascón** &lt;ulisesgascongonzalez@gmail.com&gt;
+[`A363A499291CBBC940DD62E41F10027AF002F8B0`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/A363A499291CBBC940DD62E41F10027AF002F8B0.asc)
 
 Other keys used to sign some previous releases:
 
