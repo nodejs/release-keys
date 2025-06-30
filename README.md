@@ -2,62 +2,70 @@
 
 Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 
-* **Antoine du Hamel** &lt;duhamelantoine1995@gmail.com&gt;
-[`C0D6248439F1D5604AAFFB4021D900FFDB233756`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/C0D6248439F1D5604AAFFB4021D900FFDB233756.asc)
-* **Beth Griggs** &lt;bgriggs@redhat.com&gt;
-[`4ED778F539E3634C779C87C6D7062848A1AB005C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
-* **Bryan English** &lt;bryan@bryanenglish.com&gt;
-[`141F07595B7B3FFE74309A937405533BE57C7D57`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/141F07595B7B3FFE74309A937405533BE57C7D57.asc)
-* **Colin Ihrig** &lt;cjihrig@gmail.com&gt;
-[`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
-* **Danielle Adams** &lt;adamzdanielle@gmail.com&gt;
-[`74F12602B6F1C4E913FAA37AD3A89613643B6201`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/74F12602B6F1C4E913FAA37AD3A89613643B6201.asc)
-* **James M Snell** &lt;jasnell@keybase.io&gt;
-[`71DCFD284A79C3B38668286BC97EC7A07EDE3FC1`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/71DCFD284A79C3B38668286BC97EC7A07EDE3FC1.asc)
-* **Michaël Zasso** &lt;targos@protonmail.com&gt;
-[`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
-* **Myles Borins** &lt;myles.borins@gmail.com&gt;
-[`C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8.asc)
-* **Rafael Gonzaga** &lt;rafael.nunu@hotmail.com&gt;
-[`890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4.asc)
-* **Richard Lau** &lt;rlau@redhat.com&gt;
-[`C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C.asc)
-* **Rod Vagg** &lt;rod@vagg.org&gt;
-[`DD8F2338BAE7501E3DD5AC78C273792F7D83545D`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/DD8F2338BAE7501E3DD5AC78C273792F7D83545D.asc)
-* **Ruben Bridgewater** &lt;ruben@bridgewater.de&gt;
-[`A48C2BEE680E841632CD4E44F07496B3EB3C1762`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/A48C2BEE680E841632CD4E44F07496B3EB3C1762.asc)
-* **Ruy Adorno** &lt;ruyadorno@hotmail.com&gt;
-[`108F52B48DB57BB0CC439B2997B01419BD92F80A`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/108F52B48DB57BB0CC439B2997B01419BD92F80A.asc)
-* **Shelley Vohr** &lt;shelley.vohr@gmail.com&gt;
-[`B9E2F5981AA6E0CD28160D9FF13993A75599653C`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/B9E2F5981AA6E0CD28160D9FF13993A75599653C.asc)
-* **Marco Ippolito** &lt;<marcoippolito54@gmail.com>&gt;
-[`CC68F5A3106FF448322E48ED27F5E38D5B0A215F`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/CC68F5A3106FF448322E48ED27F5E38D5B0A215F.asc)
-* **Ulises Gascón** &lt;ulisesgascongonzalez@gmail.com&gt;
-[`A363A499291CBBC940DD62E41F10027AF002F8B0`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/A363A499291CBBC940DD62E41F10027AF002F8B0.asc)
+<!-- Active releasers keys -->
+
+* **Antoine du Hamel** <<duhamelantoine1995@gmail.com>>
+  [`C0D6248439F1D5604AAFFB4021D900FFDB233756`](./keys/C0D6248439F1D5604AAFFB4021D900FFDB233756.asc)
+* **Juan José Arboleda** <<soyjuanarbol@gmail.com>>
+  [`DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7`](./keys/DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7.asc)
+* **Marco Ippolito** <<marcoippolito54@gmail.com>>
+  [`CC68F5A3106FF448322E48ED27F5E38D5B0A215F`](./keys/CC68F5A3106FF448322E48ED27F5E38D5B0A215F.asc)
+* **Michaël Zasso** <<targos@protonmail.com>>
+  [`8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600`](./keys/8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600.asc)
+* **Rafael Gonzaga** <<rafael.nunu@hotmail.com>>
+  [`890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4`](./keys/890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4.asc)
+* **Richard Lau** <<rlau@redhat.com>>
+  [`C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C`](./keys/C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C.asc)
+* **Ruy Adorno** <<ruyadorno@hotmail.com>>
+  [`108F52B48DB57BB0CC439B2997B01419BD92F80A`](./keys/108F52B48DB57BB0CC439B2997B01419BD92F80A.asc)
+* **Ulises Gascón** <<ulisesgascongonzalez@gmail.com>>
+  [`A363A499291CBBC940DD62E41F10027AF002F8B0`](./keys/A363A499291CBBC940DD62E41F10027AF002F8B0.asc)
+
+<!-- /Active releasers keys -->
 
 Other keys used to sign some previous releases:
 
-* **Danielle Adams** &lt;adamzdanielle@gmail.com&gt;
-[`1C050899334244A8AF75E53792EF661D867B9DFA`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/1C050899334244A8AF75E53792EF661D867B9DFA.asc)
-* **Chris Dickinson** &lt;christopher.s.dickinson@gmail.com&gt;
-[`9554F04D7259F04124DE6B476D5A82AC7E37093B`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/9554F04D7259F04124DE6B476D5A82AC7E37093B.asc)
-* **Evan Lucas** &lt;evanlucas@me.com&gt;
-[`B9AE9905FFD7803F25714661B63B535A4C206CA9`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/B9AE9905FFD7803F25714661B63B535A4C206CA9.asc)
-* **Gibson Fahnestock** &lt;gibfahn@gmail.com&gt;
-[`77984A986EBC2AA786BC0F66B01FBB92821C587A`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/77984A986EBC2AA786BC0F66B01FBB92821C587A.asc)
-* **Isaac Z. Schlueter** &lt;i@izs.me&gt;
-[`93C7E9E91B49E432C2F75674B0A78B0A6C481CF6`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/93C7E9E91B49E432C2F75674B0A78B0A6C481CF6.asc)
-* **Italo A. Casas** &lt;me@italoacasas.com&gt;
-[`56730D5401028683275BD23C23EFEFE93C4CFFFE`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/56730D5401028683275BD23C23EFEFE93C4CFFFE.asc)
-* **Jeremiah Senkpiel** &lt;fishrock@keybase.io&gt;
-[`FD3A5288F042B6850C66B31F09FE44734EB7990E`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/FD3A5288F042B6850C66B31F09FE44734EB7990E.asc)
-* **Julien Gilli** &lt;jgilli@fastmail.fm&gt;
-[`114F43EE0176B71C7BC219DD50A3051F888C628D`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/114F43EE0176B71C7BC219DD50A3051F888C628D.asc)
-* **Timothy J Fontaine** &lt;tjfontaine@gmail.com&gt;
-[`7937DFD2AB06298B2293C3187D33FF9D0246406D`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/7937DFD2AB06298B2293C3187D33FF9D0246406D.asc)
-* **Juan José Arboleda** &lt;soyjuanarbol@gmail.com&gt;
-[`61FC681DFB92A079F1685E77973F295594EC4689`](https://raw.githubusercontent.com/nodejs/release-keys/HEAD/keys/61FC681DFB92A079F1685E77973F295594EC4689.asc)
+<!-- Retired keys -->
 
+* **Beth Griggs** <<bethanyngriggs@gmail.com>>
+  [`4ED778F539E3634C779C87C6D7062848A1AB005C`](./keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
+* **Bryan English** <<bryan@bryanenglish.com>>
+  [`141F07595B7B3FFE74309A937405533BE57C7D57`](./keys/141F07595B7B3FFE74309A937405533BE57C7D57.asc)
+* **Chris Dickinson** <<christopher.s.dickinson@gmail.com>>
+  [`9554F04D7259F04124DE6B476D5A82AC7E37093B`](./keys/9554F04D7259F04124DE6B476D5A82AC7E37093B.asc)
+* **Colin Ihrig** <<cjihrig@gmail.com>>
+  [`94AE36675C464D64BAFA68DD7434390BDBE9B9C5`](./keys/94AE36675C464D64BAFA68DD7434390BDBE9B9C5.asc)
+* **Danielle Adams** <<adamzdanielle@gmail.com>>
+  [`1C050899334244A8AF75E53792EF661D867B9DFA`](./keys/1C050899334244A8AF75E53792EF661D867B9DFA.asc)
+  [`74F12602B6F1C4E913FAA37AD3A89613643B6201`](./keys/74F12602B6F1C4E913FAA37AD3A89613643B6201.asc)
+* **Evan Lucas** <<evanlucas@me.com>>
+  [`B9AE9905FFD7803F25714661B63B535A4C206CA9`](./keys/B9AE9905FFD7803F25714661B63B535A4C206CA9.asc)
+* **Gibson Fahnestock** <<gibfahn@gmail.com>>
+  [`77984A986EBC2AA786BC0F66B01FBB92821C587A`](./keys/77984A986EBC2AA786BC0F66B01FBB92821C587A.asc)
+* **Isaac Z. Schlueter** <<i@izs.me>>
+  [`93C7E9E91B49E432C2F75674B0A78B0A6C481CF6`](./keys/93C7E9E91B49E432C2F75674B0A78B0A6C481CF6.asc)
+* **Italo A. Casas** <<me@italoacasas.com>>
+  [`56730D5401028683275BD23C23EFEFE93C4CFFFE`](./keys/56730D5401028683275BD23C23EFEFE93C4CFFFE.asc)
+* **James M Snell** <<jasnell@keybase.io>>
+  [`71DCFD284A79C3B38668286BC97EC7A07EDE3FC1`](./keys/71DCFD284A79C3B38668286BC97EC7A07EDE3FC1.asc)
+* **Jeremiah Senkpiel** <<fishrock@keybase.io>>
+  [`FD3A5288F042B6850C66B31F09FE44734EB7990E`](./keys/FD3A5288F042B6850C66B31F09FE44734EB7990E.asc)
+* **Juan José Arboleda** <<soyjuanarbol@gmail.com>>
+  [`61FC681DFB92A079F1685E77973F295594EC4689`](./keys/61FC681DFB92A079F1685E77973F295594EC4689.asc)
+* **Julien Gilli** <<jgilli@fastmail.fm>>
+  [`114F43EE0176B71C7BC219DD50A3051F888C628D`](./keys/114F43EE0176B71C7BC219DD50A3051F888C628D.asc)
+* **Myles Borins** <<myles.borins@gmail.com>>
+  [`C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8`](./keys/C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8.asc)
+* **Rod Vagg** <<rod@vagg.org>>
+  [`DD8F2338BAE7501E3DD5AC78C273792F7D83545D`](./keys/DD8F2338BAE7501E3DD5AC78C273792F7D83545D.asc)
+* **Ruben Bridgewater** <<ruben@bridgewater.de>>
+  [`A48C2BEE680E841632CD4E44F07496B3EB3C1762`](./keys/A48C2BEE680E841632CD4E44F07496B3EB3C1762.asc)
+* **Shelley Vohr** <<shelley.vohr@gmail.com>>
+  [`B9E2F5981AA6E0CD28160D9FF13993A75599653C`](./keys/B9E2F5981AA6E0CD28160D9FF13993A75599653C.asc)
+* **Timothy J Fontaine** <<tjfontaine@gmail.com>>
+  [`7937DFD2AB06298B2293C3187D33FF9D0246406D`](./keys/7937DFD2AB06298B2293C3187D33FF9D0246406D.asc)
+
+<!-- /Retired keys -->
 
 ## Verifying Release Packages
 

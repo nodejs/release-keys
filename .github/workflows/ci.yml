@@ -1,0 +1,40 @@
+name: Linters
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  lint-readme:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Validate README lists
+        run: |
+          NODEJS_README_PATH=$(mktemp)
+          curl -sSLo "$NODEJS_README_PATH" https://github.com/nodejs/node/raw/HEAD/README.md
+          {
+            sed -n '/^<!-- Active releasers keys -->$/q;p' README.md
+            echo '<!-- Active releasers keys -->'
+            echo
+            awk -F'`' '/^### Release keys$/,/^<summary>Other keys used to sign some previous releases<.summary>$/{if($1 == "  ") print "  [`" $2 "`](./keys/" $2 ".asc)"; else if (substr($0, 0, 2) == "* ") print }' "$NODEJS_README_PATH"
+            echo
+            sed -n '\#^<!-- /Active releasers keys -->$#,/^<!-- Retired keys -->$/p' README.md
+            echo
+            awk -F'`' '/^<summary>Other keys used to sign some previous releases<.summary>$/,/^<.details>$/{if($1 == "  ") print "  [`" $2 "`](./keys/" $2 ".asc)"; else if (substr($0, 0, 2) == "* ") print }' "$NODEJS_README_PATH"
+            echo
+            sed -n '\#^<!-- /Retired keys -->$#,$p' README.md
+          } | diff README.md -
