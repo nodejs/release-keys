@@ -34,7 +34,7 @@ nodejs_keys_list() {
 nodejs_keys_clear() {
   for KEY_ID in $(nodejs_keys_list | xargs); do
     printf "."
-    gpg --batch --delete-key "${KEY_ID}"
+    gpg --yes --batch --delete-key "${KEY_ID}" || true
   done
   echo 'done'
 }
