@@ -69,11 +69,15 @@ Other keys used to sign some previous releases:
 
 ## Verifying Release Packages
 
-This repo contains the raw release signing keys in two forms:
+This repo contains the raw release signing keys in three forms:
 
- 1. The **keys/** directory contains the raw ASCII-armored release signing keys listed above.
+- The **keys/** directory contains the raw ASCII-armored release signing keys listed above.
 
- 2. The **gpg/** directory contains a GPG keyring preloaded with these release signing keys.
+- The **gpg/** directory contains a GPG keyring preloaded with these release signing keys.
+
+- The **gpg-only-active-keys/** directory contains a GPG keyring preloaded with
+  the active release signing keys. Use this if you only need to verify
+  signatures of "future" releases.
 
 For additional verification of both the keys' content *and* of the list of authorized signing
 keys, you may cross-reference the list with [nodejs.org](https://nodejs.org) and attempt to
