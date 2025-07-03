@@ -1,0 +1,38 @@
+name: Verify commit signature on key files
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - keys/
+  push:
+    branches:
+      - main
+    paths:
+      - keys/
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify-signature:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683  # v4.2.2
+        with:
+          fetch-depth: 0 # We need all the commits to be sure to find the specific one with the signature.
+          persist-credentials: false
+      - name: Validate PGP signature on key files
+        run: |
+          git diff ${{ github.event.before || 'HEAD^' }} --name-only --diff-filter=d -- keys/ | while read -r KEY_FILE; do
+            export GNUPGHOME=$(mktemp -d)
+            chmod 700 "$GNUPGHOME"
+            gpg --import "$KEY_FILE"
+            git verify-commit "$(git log -1 --format=%H -- "$KEY_FILE")"
+            rm -r "$GNUPGHOME"
+          done
