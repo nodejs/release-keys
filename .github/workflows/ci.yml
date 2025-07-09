@@ -38,3 +38,25 @@ jobs:
             echo
             sed -n '\#^<!-- /Retired keys -->$#,$p' README.md
           } | diff README.md -
+
+  lint-latest-releases:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate that latest versions of all non-EOL release lines can be verified using the "only-active-keys" keyring
+        run: |
+          set -x
+          curl -fsLo pubring.kbx "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/raw/$GITHUB_SHA/gpg-only-active-keys/pubring.kbx"
+          curl -fso index.json https://nodejs.org/dist/index.json
+          curl -fsL https://github.com/nodejs/Release/raw/HEAD/schedule.json \
+          | jq -er 'to_entries.[] | select(("\(.value.end)T00:00:00Z" | fromdate) > now) | .key' \
+          | while read -r RELEASE_LINE; do
+            echo "Resolving latest $RELEASE_LINE..."
+            VERSION=$(jq -r --arg RELEASE_LINE "$RELEASE_LINE" 'first(.[] | select(.version | startswith($RELEASE_LINE))) | .version' < index.json)
+            [ -z "$VERSION" ] || {
+              echo "Checking $VERSION..."
+              curl --fail --silent "https://nodejs.org/dist/${VERSION}/SHASUMS256.txt.asc" \
+              | gpgv --keyring=./pubring.kbx
+            }
+          done
+        shell: bash # See https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#exit-codes-and-error-action-preference, we want the pipefail option.
