@@ -5,7 +5,7 @@ Primary GPG keys for Node.js Releasers (some Releasers sign with subkeys):
 <!-- Active releasers keys -->
 
 * **Antoine du Hamel** <<duhamelantoine1995@gmail.com>>
-  [`C0D6248439F1D5604AAFFB4021D900FFDB233756`](./keys/C0D6248439F1D5604AAFFB4021D900FFDB233756.asc)
+  [`5BE8A3F6C8A5C01D106C0AD820B1A390B168D356`](./keys/5BE8A3F6C8A5C01D106C0AD820B1A390B168D356.asc)
 * **Juan José Arboleda** <<soyjuanarbol@gmail.com>>
   [`DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7`](./keys/DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7.asc)
 * **Marco Ippolito** <<marcoippolito54@gmail.com>>
@@ -27,6 +27,8 @@ Other keys used to sign some previous releases:
 
 <!-- Retired keys -->
 
+* **Antoine du Hamel** <<duhamelantoine1995@gmail.com>>
+  [`C0D6248439F1D5604AAFFB4021D900FFDB233756`](./keys/C0D6248439F1D5604AAFFB4021D900FFDB233756.asc)
 * **Beth Griggs** <<bethanyngriggs@gmail.com>>
   [`4ED778F539E3634C779C87C6D7062848A1AB005C`](./keys/4ED778F539E3634C779C87C6D7062848A1AB005C.asc)
 * **Bryan English** <<bryan@bryanenglish.com>>
