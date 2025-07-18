@@ -4,12 +4,14 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
     paths:
-      - keys/
+      - .github/workflows/verify-key-signature.yml
+      - keys/**
   push:
     branches:
       - main
     paths:
-      - keys/
+      - .github/workflows/verify-key-signature.yml
+      - keys/**
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
