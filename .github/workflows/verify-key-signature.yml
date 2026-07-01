@@ -30,8 +30,9 @@ jobs:
           fetch-depth: 0 # We need all the commits to be sure to find the specific one with the signature.
           persist-credentials: false
       - name: Validate PGP signature on key files
+        shell: bash  # See https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#exit-codes-and-error-action-preference, we want the pipefail option.
         run: |
-          git diff ${{ github.event.before || 'HEAD^' }} --name-only --diff-filter=d -- keys/ | while read -r KEY_FILE; do
+          git diff ${{ github.event_name == 'pull_request' && 'HEAD^' || github.event.before }} --name-only --diff-filter=d -- keys/ | while read -r KEY_FILE; do
             export GNUPGHOME=$(mktemp -d)
             chmod 700 "$GNUPGHOME"
             gpg --import "$KEY_FILE"
